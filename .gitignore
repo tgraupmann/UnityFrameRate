@@ -1,0 +1,7 @@
+Library/
+Assembly-CSharp.csproj
+UnityFrameRate.apk
+UnityFrameRate.sln
+obj/
+Temp/
+.vs/
