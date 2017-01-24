@@ -10,7 +10,11 @@ public class FramesPerSecond : MonoBehaviour
     private int _mFramesPerSec;
     private float _mFrequency = 1.0f;
 
-
+    void Awake()
+    {
+        Application.targetFrameRate = 200; //mobile appears capped at 60 fps
+        QualitySettings.vSyncCount = 2; //limit to 30 FPS on mobile
+    }
 
     void Start()
     {
